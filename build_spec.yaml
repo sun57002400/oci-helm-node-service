@@ -86,8 +86,8 @@ steps:
     timeoutInSeconds: 1200
     name: "Helm Build"
     command: |
-      echo "Ejecutando $(pwd)"
-      echo "Ejecutando $(ls)"
+      echo "RWONG Ejecutando PWD $(pwd)"
+      echo "RWONG Ejecutando LS $(ls)"
       pwd  
       echo "antes de ejeccutar cd ${OCI_WORKSPACE_DIR}/node_express/helm/node-service"
       cd ${OCI_WORKSPACE_DIR}/node_express/helm/node-service
