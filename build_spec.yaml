@@ -90,7 +90,7 @@ steps:
       echo "RWONG Ejecutando LS $(ls)"
       pwd  
       echo "antes de ejeccutar cd ${OCI_WORKSPACE_DIR}/helm/node-service"
-      cd ${OCI_WORKSPACE_DIR}/helm/node-service
+      cd ${OCI_WORKSPACE_DIR}/pipeline-code-clone-github_oci-helm-node-service/helm/node-service
       echo "RWONG Ejecutando PWD despues de ejecutar cd ${OCI_WORKSPACE_DIR}/helm/node-service LS $(pwd)"
       export BUILDRUN_HASH=${BUILDRUN_HASH}
       originalChartfile="Chart.yaml"
