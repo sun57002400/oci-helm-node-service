@@ -23,10 +23,10 @@ steps:
     name: "Define unique image tag"
     timeoutInSeconds: 40
     command: |
-      #TS=$(date +%y%m%d-%H%M%S)
-      #HASH=$(echo ${OCI_BUILD_RUN_ID} | rev | cut -c 1-7)
-      #export BUILDRUN_HASH="${TS}-${HASH}"
-      export BUILDRUN_HASH=`echo ${OCI_BUILD_RUN_ID} | rev | cut -c 1-7`
+      TS=$(date +%y%m%d-%H%M%S)
+      HASH=$(echo ${OCI_BUILD_RUN_ID} | rev | cut -c 1-7)
+      export BUILDRUN_HASH="${TS}-${HASH}"
+      #export BUILDRUN_HASH=`echo ${OCI_BUILD_RUN_ID} | rev | cut -c 1-7`
       echo "BUILDRUN_HASH: " $BUILDRUN_HASH
 
   - type: Command
