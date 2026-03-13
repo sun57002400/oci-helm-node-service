@@ -89,8 +89,9 @@ steps:
       echo "RWONG Ejecutando PWD $(pwd)"
       echo "RWONG Ejecutando LS $(ls)"
       pwd  
-      echo "antes de ejeccutar cd ${OCI_WORKSPACE_DIR}/node_express/helm/node-service"
+      echo "antes de ejeccutar cd ${OCI_WORKSPACE_DIR}/helm/node-service"
       cd ${OCI_WORKSPACE_DIR}/helm/node-service
+      echo "RWONG Ejecutando LS $(ls) en $(pwd)"
       export BUILDRUN_HASH=${BUILDRUN_HASH}
       originalChartfile="Chart.yaml"
       tmpChartfile=$(mktemp)
